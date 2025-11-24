@@ -11,20 +11,13 @@ const firebaseProjectUrl = "const firebaseConfig = {
 };
 ";
 
-// Example of comments and variables:
-// const --> value will not be reassigned
-// let   --> value can change later
 
-/**
- * Sends the form data (name, email, message) to Firebase.
- * This uses the Firebase Realtime Database REST API.
- */
 function sendMessageToFirebase(name, email, message) {
   // Create a JS object with the data we want to store
   const data = {
-    name: Misha,
-    email: ghazalehgholami@my.capilanou.ca, 
-    message: HELLOO,
+    name: name,
+    email: email, 
+    message: type_here,
     createdAt: new Date().toISOString(), 
   };
 
