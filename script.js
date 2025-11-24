@@ -1,13 +1,15 @@
-// =======================================
-// Lab 8 - Build a Web App Using JS & Firebase
-// =======================================
 
-// Step 1: This was Alice's URL in the original example:
-// const firebaseProjectUrl = "https://awang-capu-default-rtdb.firebaseio.com/";
-
-// Step 2: Comment out Alice's URL (done above) and
-// paste YOUR OWN Firebase Realtime Database URL here:
-const firebaseProjectUrl = "PASTE_YOUR_FIREBASE_URL_HERE";
+const firebaseProjectUrl = "const firebaseConfig = {
+  apiKey: "AIzaSyApVGEIDpV5q9iHNqFoPdHI600pWdNyPiI",
+  authDomain: "project1and2-5b783.firebaseapp.com",
+  databaseURL: "https://project1and2-5b783-default-rtdb.firebaseio.com",
+  projectId: "project1and2-5b783",
+  storageBucket: "project1and2-5b783.appspot.com",
+  messagingSenderId: "414001733175",
+  appId: "1:414001733175:web:a0a487ebddd613cf9f69b2",
+  measurementId: "G-XMEY08FBZK"
+};
+";
 
 // Example of comments and variables:
 // const --> value will not be reassigned
@@ -20,13 +22,13 @@ const firebaseProjectUrl = "PASTE_YOUR_FIREBASE_URL_HERE";
 function sendMessageToFirebase(name, email, message) {
   // Create a JS object with the data we want to store
   const data = {
-    name: name,
-    email: email,
-    message: message,
-    createdAt: new Date().toISOString(), // extra field to show when it was sent
+    name: Misha,
+    email: ghazalehgholami@my.capilanou.ca, 
+    message: HELLOO,
+    createdAt: new Date().toISOString(), 
   };
 
-  // Build the full URL for the "messages" collection
+
   const url = firebaseProjectUrl + "/messages.json";
 
   // Use fetch() to POST data to Firebase
@@ -55,15 +57,7 @@ function sendMessageToFirebase(name, email, message) {
     });
 }
 
-// =======================================
-// Event listener for the form submit button
-// =======================================
-
-/**
- * This function runs when the form is submitted.
- * It prevents the default page reload,
- * gets the input values, and calls sendMessageToFirebase().
- */
+/
 function handleFormSubmit(event) {
   // Stop the browser from reloading the page
   event.preventDefault();
